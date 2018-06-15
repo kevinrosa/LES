@@ -1,0 +1,9 @@
+#! /bin/bash
+#
+#
+
+pgfortran -Mextend -O3 -r8 -c -o fft_64.o fft.f
+#ifort -fixed -132 -r8 -O3 -c -o fft_64.o fft.f
+
+#xlf90 -qfixed -qarch=auto -qstrict -qintsize=4 -qrealsize=8 -O3 -lmass -c -o fft_64.o fft.f
+#xlf90 -q64 -qfixed -qarch=auto -qstrict -qrealsize=8 -qintsize=4 -O3 -lmass -c fft.f

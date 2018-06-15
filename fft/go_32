@@ -1,0 +1,1 @@
+xlf90 -qfixed -qarch=auto -qstrict -q32 -qintsize=4 -qrealsize=8 -O3 -lmass -c fft.f
