@@ -45,7 +45,7 @@ time=000000_001000
 ### This is the project being billed for computer time
 
 #
-user=lvanroe
+user=kanga
 # ------------ set output filenames
 #
 runout=$job_name.$case.out.$time
@@ -67,9 +67,9 @@ elif [ $imachine -eq 3 ] ; then
 #  change to suit your needs
 #
 
-   compdir=/lustre/scratch/lvanroek/compile/$case
-   datadir=/lustre/scratch/lvanroek/data/les/hurr/$case
-   execdir=/lustre/scratch/lvanroek/exec/$case
+   compdir=/lustre/scratch/$user/compile/$case
+   datadir=/lustre/scratch/$user/data/les/hurr/$case
+   execdir=/lustre/scratch/$user/exec/$case
 
 elif [ $imachine -eq 4 ] ; then
 
@@ -1075,12 +1075,12 @@ c
       path_res    = '/lustre/janus_scratch/peha5625/data/stk/u.mp.stk001'
 
 c
-      path_sav    = '/lcrc/group/acme/lvanroe/data'
-      path_his    = '/lcrc/group/acme/lvanroe/data'  
-      path_viz_xy = '/lcrc/group/acme/lvanroe/data' 
-      path_viz_xz = '/lcrc/group/acme/lvanroe/data' 
-      path_viz_yz = '/lcrc/group/acme/lvanroe/data' 
-      path_stuf   = '/lcrc/group/acme/lvanroe/data' 
+      path_sav    = '/lcrc/group/acme/$user/data'
+      path_his    = '/lcrc/group/acme/$user/data'  
+      path_viz_xy = '/lcrc/group/acme/$user/data' 
+      path_viz_xz = '/lcrc/group/acme/$user/data' 
+      path_viz_yz = '/lcrc/group/acme/$user/data' 
+      path_stuf   = '/lcrc/group/acme/$user/data' 
 c
 c -------------- typical habu names
 c
